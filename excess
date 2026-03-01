@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fullscreen Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    html, body {
       margin: 0;
+      width: 100%;
+      height: 100%;
       background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
     img {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* or 'contain' */
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/spagspagspag/Classroom/refs/heads/main/goggins.jpg" alt="Fullscreen Image">
+  <img src="goggins.jpg" alt="">
 </body>
 </html>
